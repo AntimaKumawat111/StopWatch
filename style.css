@@ -20,6 +20,7 @@ body {
   outline: none;
   border: 1px solid rgb(247, 157, 48);
   border-radius: 5px;
+  /* font-size: 90px; */
 }
 
 .contanir h2 {
@@ -47,6 +48,7 @@ body {
   align-items: center;
   background-color: rgb(251, 238, 238);
   border: 2px solid rgb(237, 200, 200);
+  font-size: 50px;
   
 }
 
@@ -71,6 +73,8 @@ body {
   border: 2px solid rgb(255, 0, 0);
 }
 
+
+
 @media only screen and (max-width: 600px) {
   .items {
     flex-direction: column;
@@ -85,7 +89,7 @@ body {
     padding: 10px;
   }
 
-  .showTime #hour
+  .showTime #hour,
   #mint{
     height: 50%;
     font-size: 30px;
