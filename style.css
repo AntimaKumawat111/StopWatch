@@ -27,19 +27,7 @@ body {
   padding: 10px;
   margin-bottom: 5px;
   outline: none;
-  text-shadow: 1px 1px 0.7px red;
-}
-
-.showTime {
-  border: 2px solid black;
-  height: 60%;
-  width: 60%;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  text-shadow: 1px 1px 0.7px rgb(216, 11, 11);
 }
 
 .items {
@@ -48,17 +36,58 @@ body {
   justify-content: center;
 }
 
+.showTime {
+  height: 60%;
+  width: 40%;
+  padding: 15px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 238, 238);
+  border: 2px solid rgb(237, 200, 200);
+  
+}
+
+
 #start,
 #stop {
-  background-color: rgb(144, 215, 144);
+  color: white;
   margin: 15px;
+  padding: 4px;
   font-size: 15px;
   outline: none;
   border: 2px solid black;
-  padding: 4px;
 }
 
-.showTime .p1 {
-  /* background-color: aquamarine; */
-  font-size: 30px;
+#start 
+{
+  border: 2px solid rgba(10, 165, 10, 0.9);
+}
+
+#stop 
+{
+  border: 2px solid rgb(255, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+  .items {
+    flex-direction: column;
+  }
+
+  .showTime #sec {
+    display: none;
+  }
+
+  .showTime {
+    height: 30%;
+    padding: 10px;
+  }
+
+  .showTime #hour
+  #mint{
+    height: 50%;
+    font-size: 30px;
+  }
 }
