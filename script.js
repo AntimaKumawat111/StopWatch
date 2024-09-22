@@ -1,5 +1,5 @@
 
-
+var timeoutid;
 var hour = 0;
 var mint = 0;
 var sec = 0;
@@ -12,13 +12,17 @@ function start() {
 
 function stop() {
   timer = false;
+  clearTimeout(timeoutid);
 }
 
 function restart() {
   timer = false;
+  
   hour = 0;
   mint = 0;
   sec = 0;
+  clearTimeout(timeoutid);
+
 }
 
 function stopwatch() {
@@ -56,5 +60,5 @@ function stopwatch() {
   document.getElementById("hour").innerHTML = hrString;
   document.getElementById("mint").innerHTML = " : " + mintString;
   document.getElementById("sec").innerHTML = " : " + secString;
-  setTimeout(stopwatch, 1000);
+  timeoutid= setTimeout(stopwatch, 1000);
 }

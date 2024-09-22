@@ -29,6 +29,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* overflow: scroll; */
+  /* white-space: word-wrap; */
 }
 
 
@@ -36,9 +38,9 @@ body {
 #stop,
 #restart {
   color: white;
-  margin: 2% 2%;
+  margin: 12% 2%;
   padding: 4px;
-  font-size: 25px;
+  font-size: 30px;
   outline: none;
   border: 2px solid black;
 
@@ -59,7 +61,7 @@ body {
 
 .showTime {
   height: 30%;
-  width: 40%;
+  width: 50%;
   padding: 15px;
   margin: auto;
   border-radius: 50%;
@@ -68,6 +70,6 @@ body {
   align-items: center;
   background-color: rgb(251, 238, 238);
   border: 2px solid rgb(237, 200, 200);
-  font-size: 60px;
+  font-size: 50px;
 }
 
