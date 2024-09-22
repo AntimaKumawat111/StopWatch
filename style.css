@@ -10,22 +10,13 @@ body {
   height: 100vh;
   width: 100%;
   background-color: rgb(253, 240, 224);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
-.contanir {
-  height: 50%;
-  width: 50%;
-  background-color: rgb(255, 251, 246);
-  overflow: auto;
-  outline: none;
-  border: 1px solid rgb(247, 157, 48);
-  border-radius: 5px;
-}
-
-.contanir h2 {
+ h2 {
+  font-size: 80px;
   text-align: center;
   padding: 10px;
   margin-bottom: 5px;
@@ -33,35 +24,24 @@ body {
   text-shadow: 1px 1px 0.7px rgb(216, 11, 11);
 }
 
+
 .items {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.showTime {
-  height: 60%;
-  width: 40%;
-  padding: 15px;
-  margin: auto;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(251, 238, 238);
-  border: 2px solid rgb(237, 200, 200);
-  font-size: 50px;
-}
 
 #start,
 #stop,
 #restart {
   color: white;
-  margin: 15px;
+  margin: 2% 2%;
   padding: 4px;
   font-size: 15px;
   outline: none;
   border: 2px solid black;
+
 }
 
 #start {
@@ -76,31 +56,18 @@ body {
   border: 2px solid rgb(255, 0, 0);
 }
 
-@media only screen and (max-width: 1050px) {
-  .showTime #hour,
-  #mint,
-  #sec {
-    font-size: 30px;
-  }
+
+.showTime {
+  height: 30%;
+  width: 40%;
+  padding: 15px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 238, 238);
+  border: 2px solid rgb(237, 200, 200);
+  font-size: 100px;
 }
 
-@media only screen and (max-width: 600px) {
-  .items {
-    flex-direction: column;
-  }
-
-  .showTime #hour {
-    display: none;
-  }
-
-  .showTime {
-    height: 30%;
-    padding: 10px;
-  }  
-
-  .showTime #hour,
-  #mint {
-    height: 30%;
-    font-size: 30px;
-  }
-}
