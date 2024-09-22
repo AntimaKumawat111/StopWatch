@@ -38,7 +38,7 @@ body {
   color: white;
   margin: 2% 2%;
   padding: 4px;
-  font-size: 15px;
+  font-size: 25px;
   outline: none;
   border: 2px solid black;
 
@@ -68,6 +68,6 @@ body {
   align-items: center;
   background-color: rgb(251, 238, 238);
   border: 2px solid rgb(237, 200, 200);
-  font-size: 100px;
+  font-size: 60px;
 }
 
