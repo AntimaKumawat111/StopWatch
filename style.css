@@ -1,3 +1,6 @@
+
+
+
 * {
   padding: 0%;
   margin: 0%;
@@ -20,7 +23,6 @@ body {
   outline: none;
   border: 1px solid rgb(247, 157, 48);
   border-radius: 5px;
-  /* font-size: 90px; */
 }
 
 .contanir h2 {
@@ -49,12 +51,11 @@ body {
   background-color: rgb(251, 238, 238);
   border: 2px solid rgb(237, 200, 200);
   font-size: 50px;
-  
 }
 
-
 #start,
-#stop {
+#stop,
+#restart {
   color: white;
   margin: 15px;
   padding: 4px;
@@ -63,35 +64,43 @@ body {
   border: 2px solid black;
 }
 
-#start 
-{
+#start {
   border: 2px solid rgba(10, 165, 10, 0.9);
 }
 
-#stop 
-{
+#stop {
   border: 2px solid rgb(255, 0, 0);
 }
 
+#restart {
+  border: 2px solid rgb(255, 0, 0);
+}
 
+@media only screen and (max-width: 1050px) {
+  .showTime #hour,
+  #mint,
+  #sec {
+    font-size: 30px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .items {
     flex-direction: column;
   }
 
-  .showTime #sec {
+  .showTime #hour {
     display: none;
   }
 
   .showTime {
     height: 30%;
     padding: 10px;
-  }
+  }  
 
   .showTime #hour,
-  #mint{
-    height: 50%;
+  #mint {
+    height: 30%;
     font-size: 30px;
   }
 }
