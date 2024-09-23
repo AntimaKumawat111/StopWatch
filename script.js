@@ -21,6 +21,10 @@ function restart() {
   hour = 0;
   mint = 0;
   sec = 0;
+  
+  document.getElementById('hour').innerHTML = "00" ;
+  document.getElementById('mint').innerHTML =": 00" ;
+  document.getElementById('sec').innerHTML = ": 00";
   clearTimeout(timeoutid);
 
 }
